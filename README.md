@@ -2,6 +2,8 @@
 
 Join video clips in the browser. This is a WebAssembly use case.
 
+People join files that were split apart: screen recordings cut into pieces, camera files that hit a size limit, or a match recorded in parts.
+
 It runs FFmpeg compiled to WebAssembly ([ffmpeg.wasm](https://github.com/ffmpegwasm/ffmpeg.wasm)) inside the browser to join the clips. There is no server, and nothing is uploaded.
 
 The WebAssembly module loads only after a join starts, and only for the in-memory path, which keeps the parts and the result in the tab. The streaming path writes the result straight to disk and does not load the module.
