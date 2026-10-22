@@ -1,0 +1,32 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "concat",
+  // Assets only. Join counts stay a same-origin POST to /api/concat-event.
+  "compatibility_date": "2026-10-22",
+  "observability": {
+    "enabled": true,
+    "logs": {
+      "enabled": true,
+      "head_sampling_rate": 1
+    },
+    "traces": {
+      "enabled": true,
+      "head_sampling_rate": 0.01
+    }
+  },
+  "assets": {
+    // dist/concat/* is served at /concat/*; dist/index.html is the SPA shell.
+    "directory": "./dist",
+    "not_found_handling": "single-page-application"
+  },
+  "routes": [
+    {
+      "pattern": "camilaescudero.cl/concat",
+      "zone_name": "camilaescudero.cl"
+    },
+    {
+      "pattern": "camilaescudero.cl/concat/*",
+      "zone_name": "camilaescudero.cl"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+@import "@camib0b/ui/ui.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
