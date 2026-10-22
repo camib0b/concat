@@ -105,7 +105,7 @@ async function convertOneFile(options: {
 
 /**
  * Re-encode each part to a private temporary file, then stream-copy those
- * matching files into the save location. Used after the coach confirms, and
+ * matching files into the save location. Used after the user confirms, and
  * only where the File System Access API can write the result in chunks.
  */
 export async function convertAndStream(options: {

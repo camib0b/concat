@@ -45,7 +45,7 @@ async function partDuration(input: Input): Promise<number> {
 
 /**
  * Stream-copy join. Samples are read in ranges and written in chunks to the
- * file the user picked. The output is not held in memory, so a multi-GB match
+ * file the user picked. The output is not held in memory, so a multi-GB video
  * can finish. Mediabunny's stream target is the maintained writer for the File
  * System Access API; mp4box keeps the finished file in memory.
  */

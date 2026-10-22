@@ -8,7 +8,7 @@ export type ConcatJoinPath = "stream" | "memory";
 
 export type ConcatJoinOutcome = "success" | "error" | "cancelled";
 
-/** Anonymous join count. No file names, footage, or identifiers. */
+/** Anonymous join count. No file names, video, or identifiers. */
 export type ConcatTelemetryEvent = {
   browser: BrowserFamily;
   path: ConcatJoinPath;

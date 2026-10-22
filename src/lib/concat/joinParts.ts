@@ -3,7 +3,7 @@ import { throwIfCancelled } from "@/lib/concat/types";
 
 /**
  * Loads the join implementation for this action. WebAssembly is imported only
- * from the in-memory branch, after the coach has started a join.
+ * from the in-memory branch, after the user has started a join.
  */
 export async function joinParts(options: {
   files: readonly Blob[];

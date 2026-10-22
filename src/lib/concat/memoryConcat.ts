@@ -131,7 +131,7 @@ export async function memoryCopyConcat(options: {
 }
 
 /**
- * In-memory re-encode, used only after the coach confirms. Much slower than
+ * In-memory re-encode, used only after the user confirms. Much slower than
  * stream copy. Each part is normalized, then the concat demuxer copies them.
  */
 export async function memoryConvertConcat(options: {

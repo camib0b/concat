@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { SiteHeader, useLanguage } from "@camib0b/ui";
 import ConcatTool from "@/components/concat/ConcatTool";
 
-/** Public route: `/concat` — browser-only join for split match footage. */
+/** Public route: `/concat` — browser-only join for video clips. */
 const Concat = () => {
   const { t } = useLanguage();
 

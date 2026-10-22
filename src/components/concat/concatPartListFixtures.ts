@@ -57,7 +57,7 @@ const WORST_CASE_PARTS: readonly ConcatPartView[] = [
   },
   {
     id: "worst-vietnamese",
-    name: "Đặng Thị Ngọc Hân — cuarto.mp4",
+    name: "Đặng Thị Ngọc Hân — clip.mp4",
     sizeBytes: 1284,
     durationSeconds: null,
     state: "ready",
@@ -113,7 +113,7 @@ const WORST_CASE_PARTS: readonly ConcatPartView[] = [
   },
   {
     id: "worst-unreadable",
-    name: "Aleksandra Wiśniewska-Kowalczyk match backup.mts",
+    name: "Aleksandra Wiśniewska-Kowalczyk clip backup.mts",
     sizeBytes: 86_000_000,
     durationSeconds: null,
     state: "unreadable",
