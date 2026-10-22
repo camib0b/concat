@@ -1,8 +1,10 @@
 # Concat
 
-Join split match footage in the browser. Put the parts in order and save one file.
+Join split match footage in the browser. This is a WebAssembly use case.
 
-The join runs fully in the browser. Nothing is uploaded. It uses [ffmpeg.wasm](https://github.com/ffmpegwasm/ffmpeg.wasm).
+It runs FFmpeg compiled to WebAssembly ([ffmpeg.wasm](https://github.com/ffmpegwasm/ffmpeg.wasm)) inside the browser to join the footage. There is no server, and nothing is uploaded.
+
+The WebAssembly module loads only after a join starts, and only for the in-memory path, which keeps the parts and the result in the tab. The streaming path writes the result straight to disk and does not load the module.
 
 Served at [camilaescudero.cl/concat](https://camilaescudero.cl/concat).
 
